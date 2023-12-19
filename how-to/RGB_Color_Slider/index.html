@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RGB Color Slider</title>
+</head>
+<body>
+    <div class="container">
+        <!--Control para el color rojo-->
+        <div class="wrapper">
+            <label for="red">R</label>
+            <input type="range" min="0" max="225" value="0" id="red">
+        </div>
+        <!--Control para el color verde-->
+        <div class="wrapper">
+            <label for="green">G</label>
+            <input type="range" min="0" max="225" value="0" id="green">
+        </div>
+        <!--Control para el color azul-->
+        <div class="wrapper">
+            <label for="blue">B</label>
+            <input type="range" min="0" max="225" value="0" id="blue">
+        </div>
+        <!--Mostrar el resultado par se copiado posteriormente-->
+        <div class="result">
+            <input type="text" readonly value="rgb(0,0,0)">
+            <button id="copy-btn">Copiar código de color</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
